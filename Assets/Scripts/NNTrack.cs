@@ -10,9 +10,7 @@ public class NNTrack : Agent
     [System.Serializable]
     public class RewardInfo
     {
-        public float nomovement = -0.1f;
         public float mult_forward = 0.001f;
-        public float mult_backward = -0.001f;
         public float mult_barrier = -0.8f;
         public float mult_car = -0.5f;
     }
@@ -62,11 +60,9 @@ public class NNTrack : Agent
         switch (actions.DiscreteActions.Array[0])   //move
         {
             case 0:
-                AddReward(rwd.nomovement);
                 break;
             case 1:
                 rb.AddRelativeForce(Vector3.back * Movespeed * Time.deltaTime, ForceMode.VelocityChange); //back
-                AddReward(mag * rwd.mult_backward);
                 break;
             case 2:
                 rb.AddRelativeForce(Vector3.forward * Movespeed * Time.deltaTime, ForceMode.VelocityChange); //forward
@@ -119,8 +115,8 @@ public class NNTrack : Agent
         else if (collision.gameObject.CompareTag("Car") == true)
         {
             AddReward(mag * rwd.mult_car);
-            //if (doEpisodes == true)
-                //EndEpisode();
+            if (doEpisodes == true)
+                EndEpisode();
         }
     }
     private bool isWheelsDown()
