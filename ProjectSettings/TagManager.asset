@@ -9,6 +9,8 @@ TagManager:
   - BarrierWhite
   - Win
   - Lose
+  - Gravel
+  - Road
   layers:
   - Default
   - TransparentFX
