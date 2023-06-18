@@ -570,7 +570,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -690,7 +690,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -698,7 +698,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1001 &387434807
 PrefabInstance:
@@ -834,7 +834,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -954,7 +954,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -962,7 +962,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1001 &422239892
 PrefabInstance:
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -1226,7 +1226,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &485544806 stripped
 GameObject:
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -1379,7 +1379,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -1387,7 +1387,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &539659527 stripped
 GameObject:
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -1548,7 +1548,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &541819441
 GameObject:
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -1736,7 +1736,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -1744,7 +1744,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1001 &1008830105
 PrefabInstance:
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -2000,7 +2000,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -2008,7 +2008,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &1047251670
 GameObject:
@@ -2588,7 +2588,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -2708,7 +2708,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -2716,7 +2716,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1001 &1551667886
 PrefabInstance:
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -3181,7 +3181,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -3189,7 +3189,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &1620921337 stripped
 GameObject:
@@ -3222,7 +3222,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -3342,7 +3342,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -3350,7 +3350,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &1657317158
 GameObject:
@@ -3685,7 +3685,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -3711,7 +3711,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -3719,7 +3719,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &2014643166
 GameObject:
@@ -3786,7 +3786,7 @@ MonoBehaviour:
   - Lose
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
-  m_SphereCastRadius: 0.05
+  m_SphereCastRadius: 0.03
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -3906,7 +3906,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   Movespeed: 30
   Turnspeed: 100
   rwd:
@@ -3914,7 +3914,7 @@ MonoBehaviour:
     barrier: -0.005
     car: -0.005
     win: 5
-    lose: -1
+    lose: -2
   doEpisodes: 1
 --- !u!1 &2069165252
 GameObject:
