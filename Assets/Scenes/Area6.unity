@@ -136,8 +136,20 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.384064
+      value: -7.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -145,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.86161
+      value: -6.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
       propertyPath: m_LocalRotation.w
@@ -174,6 +186,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8073153722208568219, guid: 5be1548e73d0e9540afa32a29a0c6a11, type: 3}
       propertyPath: m_Layer
@@ -419,7 +435,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -510,9 +526,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1001 &269427291
 PrefabInstance:
@@ -679,7 +695,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -770,9 +786,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1001 &300826667
 PrefabInstance:
@@ -939,7 +955,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -1030,9 +1046,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1 &882045246 stripped
 GameObject:
@@ -1226,7 +1242,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -1317,9 +1333,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1 &1047251670
 GameObject:
@@ -1405,8 +1421,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047251670}
-  m_LocalRotation: {x: -0.3483435, y: -0.34894216, z: 0.14158638, w: -0.8583994}
-  m_LocalPosition: {x: -353.9872, y: 43.28221, z: 62.777924}
+  m_LocalRotation: {x: -0.4850946, y: -0.27282727, z: 0.16239746, w: -0.8147856}
+  m_LocalPosition: {x: -342.33524, y: 88.80621, z: 53.14087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1437,7 +1453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075572616}
   m_LocalRotation: {x: -0, y: -0.19546145, z: -0, w: 0.9807114}
-  m_LocalPosition: {x: -18.05, y: 0.36, z: -8.81}
+  m_LocalPosition: {x: 5.02, y: 0.9, z: -6.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1617,7 +1633,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -1708,9 +1724,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1 &1118269104 stripped
 GameObject:
@@ -1985,7 +2001,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -2076,9 +2092,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1 &1598257773
 GameObject:
@@ -2107,8 +2123,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598257773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16, y: 16, z: 16}
+  m_LocalPosition: {x: 0, y: -0.46, z: 0}
+  m_LocalScale: {x: 18, y: 18, z: 18}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2014643167}
@@ -2378,7 +2394,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -2469,9 +2485,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1001 &1840434505
 PrefabInstance:
@@ -2608,7 +2624,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8bcfa0429a3e902418f19f458a50710a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Area6
@@ -2729,9 +2745,9 @@ MonoBehaviour:
   Movespeed: 30
   Turnspeed: 100
   rwd:
-    mult_forward: 0.01
-    mult_barrier: -4
-    mult_car: -2
+    mult_forward: 0.1
+    mult_barrier: -6
+    mult_car: -3
   doEpisodes: 1
 --- !u!1 &1919689148 stripped
 GameObject:
