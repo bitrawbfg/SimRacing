@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CambiarEscena : MonoBehaviour
 {
-    [SerializeField] Animator animator;
-    [SerializeField] Animator animatorTransicion;
-
-    public void PulsarArea()
+    private void Update()
     {
-        animatorTransicion.Play("FadeOutTransicion");
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Hola");
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     public void Area1()
@@ -45,6 +46,10 @@ public class CambiarEscena : MonoBehaviour
 
     public void Menu()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Hola");
+            SceneManager.LoadScene("Menu");
+        }
     }
 }
