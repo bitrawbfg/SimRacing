@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour
     [SerializeField] Animator animatorBotonPlay;
     [SerializeField] Button botonIniciar;
     [SerializeField] Animator textoSeleccionar;
+    [SerializeField] Animator[] listaAreas = new Animator[6];
 
     public void Prueba()
     {
@@ -16,6 +17,17 @@ public class Menu : MonoBehaviour
         animatorLogo.Play("MovimientoLogo");
         animatorBotonPlay.Play("FadeOutButtonPlay");
         textoSeleccionar.enabled = true;
+
+        for (int i = 0; i < listaAreas.Length; i++)
+        {
+            listaAreas[i].enabled = true;
+        }
+
         botonIniciar.enabled = false;
+    }
+
+    public void Prueba2()
+    {
+        Debug.Log("Prueba2");
     }
 }
