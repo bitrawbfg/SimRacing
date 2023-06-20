@@ -38,69 +38,66 @@ public class NNTrack : Agent
         recall_position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         recall_rotation = new Quaternion(this.transform.rotation.x, this.transform.rotation.y, this.transform.rotation.z, this.transform.rotation.w);
     }
+
     public override void OnEpisodeBegin()
     {
         rb.velocity = Vector3.zero;
         this.transform.position = recall_position;
         this.transform.rotation = recall_rotation;
     }
+
     public override void OnActionReceived(ActionBuffers actions)
     {
-        //decisionrequestor component needed
-        //  space type: discrete
-        //      branches size: 2 move, turn
-        //          branch 0 size: 3  fwd, nomove, back
-        //          branch 1 size: 3  left, noturn, right
-
         if (isWheelsDown() == false)
             return;
 
         float mag = Mathf.Abs(rb.velocity.sqrMagnitude);
 
-        switch (actions.DiscreteActions.Array[0])   //move
+        switch (actions.DiscreteActions.Array[0])
         {
             case 0:
                 break;
             case 1:
-                rb.AddRelativeForce(Vector3.back * Movespeed * Time.deltaTime, ForceMode.VelocityChange); //back
+                rb.AddRelativeForce(Vector3.back * Movespeed * Time.deltaTime, ForceMode.VelocityChange);
                 break;
             case 2:
-                rb.AddRelativeForce(Vector3.forward * Movespeed * Time.deltaTime, ForceMode.VelocityChange); //forward
+                rb.AddRelativeForce(Vector3.forward * Movespeed * Time.deltaTime, ForceMode.VelocityChange);
                 AddReward(mag * rwd.mult_forward);
                 break;
         }
 
-        switch (actions.DiscreteActions.Array[1])   //turn
+        switch (actions.DiscreteActions.Array[1])
         {
             case 0:
                 break;
             case 1:
-                this.transform.Rotate(Vector3.up, -Turnspeed * Time.deltaTime); //left
+                this.transform.Rotate(Vector3.up, -Turnspeed * Time.deltaTime);
                 break;
             case 2:
-                this.transform.Rotate(Vector3.up, Turnspeed * Time.deltaTime); //right
+                this.transform.Rotate(Vector3.up, Turnspeed * Time.deltaTime);
                 break;
         }
     }
+
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-        //Purpose:  for me to simulate the brain actions (I control the car with the keyboard)
         actionsOut.DiscreteActions.Array[0] = 0;
         actionsOut.DiscreteActions.Array[1] = 0;
 
-        float move = Input.GetAxis("Vertical");     // -1..0..1  WASD arrowkeys
+        float move = Input.GetAxis("Vertical");
         float turn = Input.GetAxis("Horizontal");
 
         if (move < 0)
-            actionsOut.DiscreteActions.Array[0] = 1;    //back
+            actionsOut.DiscreteActions.Array[0] = 1;
         else if (move > 0)
-            actionsOut.DiscreteActions.Array[0] = 2;    //forward
+            actionsOut.DiscreteActions.Array[0] = 2;
 
         if (turn < 0)
-            actionsOut.DiscreteActions.Array[1] = 1;    //left
+            actionsOut.DiscreteActions.Array[1] = 1;
         else if (turn > 0)
-            actionsOut.DiscreteActions.Array[1] = 2;    //right
+            actionsOut.DiscreteActions.Array[1] = 2;
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         float mag = collision.relativeVelocity.sqrMagnitude;
@@ -119,9 +116,9 @@ public class NNTrack : Agent
                 EndEpisode();
         }
     }
+
     private bool isWheelsDown()
     {
-        //raycast down from car = ground should be closely there
         return Physics.Raycast(this.transform.position, -this.transform.up, bnd.size.y * 0.55f);
     }
 }
